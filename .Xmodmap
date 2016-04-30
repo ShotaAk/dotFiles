@@ -5,6 +5,7 @@ remove mod4 = Control_R
 keycode 133 = Control_L
 keycode 134 = Control_R
 keycode 37 = Escape 
+keycode 130 = Alt_R
 
 add control = Control_L
 add control = Control_R
