@@ -57,4 +57,6 @@ if [[ ! -d "$TMPDIR" ]]; then
 fi
 
 TMPPREFIX="${TMPDIR%/}/zsh"
+# Natural Scrolling
+xinput set-prop 12 282 -237 -237
 
