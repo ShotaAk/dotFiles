@@ -90,3 +90,7 @@ export EDITOR='vim'
 
 alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
+
+# 'ls' after 'cd'
+setopt auto_cd
+function chpwd() { ls }
