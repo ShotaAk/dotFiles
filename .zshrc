@@ -90,6 +90,7 @@ export EDITOR='vim'
 
 alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
+alias qtcreator='/opt/Qt/Tools/QtCreator/bin/qtcreator'
 
 # 'ls' after 'cd'
 setopt auto_cd
