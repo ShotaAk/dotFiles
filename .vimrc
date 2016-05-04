@@ -23,6 +23,7 @@ NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'ConradIrwin/vim-bracketed-paste'
 NeoBundle 'Shougo/neocomplete.vim'
+NeoBundle 'kannokanno/previm'
 
 
 " You can specify revision/branch/tag.
@@ -196,3 +197,8 @@ set clipboard=unnamed,unnamedplus
 set mouse=a
 
 " End Vim Base Setting Scripts------------------
+
+
+" Markdown Setting Scripts------------------
+au BufRead,BufNewFile *.md set filetype=markdown
+let g:previm_open_cmd = 'google-chrome'
