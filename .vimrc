@@ -196,12 +196,13 @@ set softtabstop=4 " 連続した空白に対してタブキーやバックスペ
 set autoindent    " 改行時に前の行のインデントを継続する
 set smartindent   " 改行時に入力された行の末尾に合わせて次の行のインデントを増
 
-" 動作環境との統合関連の設定
-
 " OSのクリップボードをレジスタ指定無しで Yank, Put 出来るようにする
 set clipboard=unnamed,unnamedplus
 " マウスの入力を受け付ける
 set mouse=a
+
+" キーマッピング
+nmap <silent> <Esc><Esc> :nohlsearch<CR> " ESCを二回押して検索のハイライトを消す
 
 " End Vim Base Setting Scripts------------------
 
