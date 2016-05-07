@@ -24,6 +24,7 @@ NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'ConradIrwin/vim-bracketed-paste'
 NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'kannokanno/previm'
+NeoBundle 'tyru/caw.vim'
 
 
 " You can specify revision/branch/tag.
@@ -135,6 +136,12 @@ let g:neocomplete#sources#omni#input_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\
 let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
 " End NeoComplete Scripts------------------------
 
+
+" Caw.vim Setting Scripts------------------------
+nmap <Leader>c <Plug>(caw:zeropos:toggle)
+vmap <Leader>c <Plug>(caw:zeropos:toggle)
+" End Caw.vim Setting Scripts------------------------
+
 " Vim Base Setting Scripts---------------------
 colorscheme wombat
 
@@ -202,3 +209,8 @@ set mouse=a
 " Markdown Setting Scripts------------------
 au BufRead,BufNewFile *.md set filetype=markdown
 let g:previm_open_cmd = 'google-chrome'
+
+" End Markdown Setting Scripts------------------
+
+
+
