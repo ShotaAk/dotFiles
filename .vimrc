@@ -191,6 +191,7 @@ set textwidth=0    " 自動的に改行が入るのを無効化
 set colorcolumn=80 " 80文字目にラインを入れる
 set splitbelow     " 横分割で下にウィンドウを開く
 set splitright     " 縦分割で右にウィンドウを開く
+set completeopt=menuone " 補完時にプレビューを表示しない"
 
 " 不可視文字の表示記号指定
 set listchars=tab:▸\ ,eol:↲,extends:❯,precedes:❮
