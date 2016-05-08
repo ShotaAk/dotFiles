@@ -25,6 +25,7 @@ NeoBundle 'ConradIrwin/vim-bracketed-paste'
 NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'kannokanno/previm'
 NeoBundle 'tyru/caw.vim'
+NeoBundle 'thinca/vim-quickrun'
 
 
 " You can specify revision/branch/tag.
@@ -166,6 +167,10 @@ endif
 " End Neosnippet Setting Scripts------------------------
 
 
+" QuickRun Setting Scripts------------------------
+let g:quickrun_config={'*': {'split': 'vertical'}}  "垂直分割
+
+" End QuickRun Setting Scripts------------------------
 
 " Vim Base Setting Scripts---------------------
 colorscheme wombat
@@ -184,6 +189,9 @@ set list           " 不可視文字を表示
 set wrap           " 長いテキストの折り返し
 set textwidth=0    " 自動的に改行が入るのを無効化
 set colorcolumn=80 " 80文字目にラインを入れる
+set splitbelow     " 横分割で下にウィンドウを開く
+set splitright     " 縦分割で右にウィンドウを開く
+
 " 不可視文字の表示記号指定
 set listchars=tab:▸\ ,eol:↲,extends:❯,precedes:❮
 
