@@ -142,6 +142,31 @@ nmap <Leader>c <Plug>(caw:zeropos:toggle)
 vmap <Leader>c <Plug>(caw:zeropos:toggle)
 " End Caw.vim Setting Scripts------------------------
 
+
+" Neosnippet Setting Scripts------------------------
+
+" Plugin key-mappings.
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-k>     <Plug>(neosnippet_expand_target)
+
+" SuperTab like snippets behavior.
+imap <expr><TAB>
+ \ pumvisible() ? "\<C-n>" :
+ \ neosnippet#expandable_or_jumpable() ?
+ \    "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+\ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+
+" For conceal markers.
+if has('conceal')
+  set conceallevel=2 concealcursor=niv
+endif
+
+" End Neosnippet Setting Scripts------------------------
+
+
+
 " Vim Base Setting Scripts---------------------
 colorscheme wombat
 
@@ -208,10 +233,13 @@ nmap <silent> <Esc><Esc> :nohlsearch<CR> " ESCを二回押して検索のハイ�
 
 
 " Markdown Setting Scripts------------------
-au BufRead,BufNewFile *.md set filetype=markdown
+autocmd BufRead,BufNewFile *.md set filetype=markdown
 let g:previm_open_cmd = 'google-chrome'
 
 " End Markdown Setting Scripts------------------
 
 
+" ROS Setting Scripts------------------
+autocmd BufRead,BufNewFile *.launch set filetype=xml
+" End ROS Setting Scripts------------------
 
