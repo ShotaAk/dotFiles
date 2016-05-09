@@ -237,6 +237,10 @@ set mouse=a
 
 " キーマッピング
 nmap <silent> <Esc><Esc> :nohlsearch<CR> " ESCを二回押して検索のハイライトを消す
+nnoremap H <C-w>h   " ウィンドウ分割時の移動を[H,J,K,L]で可能に
+nnoremap J <C-w>j
+nnoremap K <C-w>k
+nnoremap L <C-w>l
 
 " End Vim Base Setting Scripts------------------
 
