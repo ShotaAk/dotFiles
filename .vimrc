@@ -1,4 +1,5 @@
-
+" Note: Skip initialization for vim-tiny or vim-small.
+if 0 | endif
 
 " Bundle Scripts-----------------------------
 if &compatible
@@ -6,10 +7,10 @@ if &compatible
 endif
 
 " Required:
-set runtimepath^=/home/akshota/.vim/bundle/neobundle.vim/
+set runtimepath^=~/.vim/bundle/neobundle.vim/
 
 " Required:
-call neobundle#begin(expand('/home/akshota/.vim/bundle'))
+call neobundle#begin(expand('~/.vim/bundle/'))
 
 " Let NeoBundle manage NeoBundle
 " Required:

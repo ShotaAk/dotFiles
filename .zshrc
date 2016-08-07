@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+ZSH_THEME="avit"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -83,10 +83,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Set ROS Indigo
-source /opt/ros/indigo/setup.zsh
-source ~/catkin_ws/devel/setup.zsh
-export EDITOR='vim'
 
 alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
@@ -95,3 +91,10 @@ alias qtcreator='/opt/Qt/Tools/QtCreator/bin/qtcreator'
 # 'ls' after 'cd'
 setopt auto_cd
 function chpwd() { ls }
+
+case "${OSTYPE}" in
+    # Mac
+    darwin*)
+    alias vim="mvim -v"
+    ;;
+esac
